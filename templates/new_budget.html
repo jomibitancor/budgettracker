@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div id="newbudget-container" class="container">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.budget.label(class="form-control-label") }}
+            {% if form.budget.errors %}
+            {{ form.budget(class="form-control from-control-lg is-invalid") }}
+            <div class="invalid-feedback">
+                {% for error in form.budget.errors %}
+                <span> {{ error }} </span>
+                {% endfor %}
+            </div>
+            {% else %}
+            {{ form.budget(class="form-control from-control-lg") }}
+            {% endif %}
+
+        </div>
+        <div class="form-group">
+            {% if past_budget %}
+            {{ form.submit(class="btn btn-outline-primary", onclick="return confirm('Are you sure?');") }}
+            {% else %}
+            {{ form.submit(class="btn btn-outline-primary") }}
+            {% endif %}
+        </div>
+
+    </form>
+</div>
+
+{% endblock content %}

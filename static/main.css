@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+#wave-svg {
+  position: fixed;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: -1;
+}
+
+#main-section {
+  padding-top: 90px;
+}
+
+#budget-container {
+  width: 50%;
+}
+
+#login-container {
+  width: 50%;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #login-container {
+    width: 100%;
+  }
+}
+
+#register-container {
+  width: 50%;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #register-container {
+    width: 100%;
+  }
+}
+
+#newbudget-container {
+  width: 50%;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #newbudget-container {
+    width: 100%;
+  }
+}
+
+#newentry-container {
+  width: 50%;
+}
+
+@media (max-width: 766px) and (min-width: 300px) {
+  #newentry-container {
+    width: 100%;
+  }
+}
+
+#quickview {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+#entries .entry-container {
+  padding: 10px 10px 10px 10px;
+  width: 80%;
+  background: whitesmoke;
+}
+
+#entries .entry-container .amount-div {
+  width: 25%;
+}
+
+#entries .entry-container .details-div {
+  width: 65%;
+}
+
+#entries .entry-container .update-delete-div {
+  width: 10%;
+  -webkit-transition: ease-in 2s all;
+  transition: ease-in 2s all;
+}
+
+#entries .entry-container .update-delete-div .btn-outline-danger {
+  border-color: transparent;
+}
+
+#entries .entry-container .update-delete-div .delete-btn {
+  visibility: hidden;
+}
+
+#entries .entry-container .update-delete-div .btn-outline-primary {
+  border-color: transparent;
+}
+
+#entries .entry-container .update-delete-div .update-btn {
+  visibility: hidden;
+}
+
+#entries .entry-container:hover .update-btn {
+  visibility: visible;
+}
+
+#entries .entry-container:hover .delete-btn {
+  visibility: visible;
+}
+
+#dropdown-container {
+  margin-left: auto;
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+}
+
+#dropdown-container .dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  font-size: 14px;
+  border: none;
+}
+
+#dropdown-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown-container .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#dropdown-container .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+#dropdown-container .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+#dropdown-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#dropdown-container .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
